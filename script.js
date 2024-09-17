@@ -90,8 +90,9 @@ console.log(Uppercase);
 
 // STR.INDEXOF()
 
-const exampleStr = 'I love cat, he said, cats are great';
+const exampleStr = 'I love cat, he said, dogs are great';
 console.log(exampleStr.indexOf('cat'));
+console.log(exampleStr.lastIndexOf('cat'));
 
 // LASTINDEXOF()
 
@@ -99,7 +100,57 @@ const sentence = 'I am hungry, I need to eat good food';
 const lastIndexOf = sentence.lastIndexOf('hungry');
 console.log(lastIndexOf);
 
-const text = "JavaScript is a powerful language. Java is popular.";
+const text = "JavaScript is a powerful language";
 const index = text.lastIndexOf("powerful");
 console.log(index); 
+
+// INCLUDES ==>
+
+const test = 'Hello Guys! welcome to my status.';
+
+const check = test.includes('status');
+console.log(check);
+
+// STARTSWITH ==> 
+
+const start = 'Saturday night plans';
+console.log(start.startsWith('Sat'));
+
+// ENDSWITH ==>
+
+const str = 'Cats are the best!';
+console.log(str.endsWith('best!'));
+
+// TRIM ==>
+
+const greet = '     Hello World!   '
+console.log(greet.trim());
+
+// SPLIT ==>
+
+const split = 'The quick brown fox jumps over the lazy dog.'
+console.log(split.split(''));
+
+const split2 = 'jump'
+console.log(split2.split(''));
+console.log(typeof split2);
+
+// SLICE ==>
+
+const slice = 'Hello World!';
+console.log(slice.slice(0 , 5));
+
+const classWork = 'My name is Rodiyat, I am from Kwara State   '
+
+console.log(classWork.startsWith('My'));
+
+console.log(classWork.trimEnd());
+
+console.log(classWork.split());
+
+console.log(classWork.slice(0, 10));
+
+
+
+
 
