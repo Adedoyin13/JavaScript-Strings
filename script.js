@@ -90,7 +90,7 @@ console.log(Uppercase);
 
 // STR.INDEXOF()
 
-const exampleStr = 'I love cat, he said, dogs are great';
+const exampleStr = 'I love cat, he said, cats are great';
 console.log(exampleStr.indexOf('cat'));
 console.log(exampleStr.lastIndexOf('cat'));
 
@@ -100,8 +100,8 @@ const sentence = 'I am hungry, I need to eat good food';
 const lastIndexOf = sentence.lastIndexOf('hungry');
 console.log(lastIndexOf);
 
-const text = "JavaScript is a powerful language";
-const index = text.lastIndexOf("powerful");
+const text = "JavaScript is a powerful language. JavaScript is popular";
+const index = text.lastIndexOf("JavaScript");
 console.log(index); 
 
 // INCLUDES ==>
@@ -129,7 +129,7 @@ console.log(greet.trim());
 // SPLIT ==>
 
 const split = 'The quick brown fox jumps over the lazy dog.'
-console.log(split.split(''));
+console.log(split.split(' '));
 
 const split2 = 'jump'
 console.log(split2.split(''));
@@ -150,7 +150,15 @@ console.log(classWork.split());
 
 console.log(classWork.slice(0, 10));
 
+// REPLACE ==> Replacing items in a string with another 
 
+let text2 = "Please visit Microsoft!";
+let newText = text2.replace("Microsoft", "W3Schools");
+console.log(newText);
+
+let text3 = "Please visit Microsoft and Microsoft!";
+let newText2 = text3.replace("Microsoft", "W3Schools");
+console.log(newText2);
 
 
 
